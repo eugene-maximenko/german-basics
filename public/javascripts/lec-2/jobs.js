@@ -32,7 +32,7 @@ const adjectives = [
     "gut",
     "schlecht",
     "schön",
-    "interresant",
+    "interessant",
     "weiß",
     "schwarz",
     "rot",
@@ -49,6 +49,8 @@ const jobs = [
     'Arbeiter',
     'Sportler',
     'Grafiker',
+    'Architekt',
+    'Designer'
 ];
 const prepositions = ['Ich', 'Du', 'Er', 'Sie(она)', 'Es', 'Wir', 'Ihr', 'Sie(они)', 'Sie(вы)'];
 
@@ -73,6 +75,16 @@ const updateString = () => {
     centralParagraph.innerText = generatedString;
     updateCounter(counter);
 };
+
+async function fetchAsync(url) {
+    let response = await fetch(url);
+    let data = await response.json();
+    console.log(data);;
+    return data;
+}
+
+let nounsArray;
+fetchAsync('http://localhost:3000/lec-3/nouns').then(result => nouns = result).catch(error => console.log('Error happened', error));
 
 const updateCounter = (element) => {
     let number = parseInt(element.innerText);

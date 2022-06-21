@@ -32,7 +32,7 @@ const adjectives = [
   "gut",
   "schlecht",
   "schön",
-  "interresant",
+  "interessant",
   "weiß",
   "schwarz",
   "rot",
@@ -48,13 +48,13 @@ const newTaskButton = document.getElementById("new-task");
 const counter = document.getElementById("counter");
 
 const updateString = () => {
-  const randomNumber = ({ length: ArrayLegnth }) =>
+  const randomNumber = ({length: ArrayLegnth}) =>
     Math.floor(Math.random() * ArrayLegnth);
 
   const randomNoun = nouns[randomNumber(nouns)];
   const randomAdjective = adjectives[randomNumber(adjectives)];
 
-  const generatedString = `Das ist ... ${randomNoun}. |    ... ${randomNoun} ist ${randomAdjective}.`;
+  const generatedString = `Das ist ... ${ randomNoun }. |    ... ${ randomNoun } ist ${ randomAdjective }.`;
 
   centralParagraph.innerText = generatedString;
   updateCounter(counter);
