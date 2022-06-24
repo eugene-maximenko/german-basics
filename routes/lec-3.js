@@ -8,15 +8,15 @@ router.get("/nouns", function (req, res, next) {
 });
 
 router.get("/nouns-plural", function (req, res, next) {
-  res.render("lec-3/nouns-plural", {title: "Lec-3: Nouns"});
+  res.render("lec-3/nouns-plural", {title: "Lec-3: Nouns-plural"});
 });
 
-router.get("/diminutive", function (req, res, next) {
-  res.render("lec-3/diminutive", {title: "Lec-3: Nouns"});
+router.get("/jobs", function (req, res, next) {
+  res.render("lec-3/jobs", {title: "Lec-3: Jobs"});
 });
 
 router.get("/possessive", function (req, res, next) {
-  res.render("lec-3/possessive", {title: "Lec-3: Nouns"});
+  res.render("lec-3/possessive", {title: "Lec-3: Possessive"});
 });
 
 module.exports = router;

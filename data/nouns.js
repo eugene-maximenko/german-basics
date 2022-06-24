@@ -43,6 +43,7 @@ const nouns = [
     {singular: 'Apfel', gender: 'm', plural: 'Äpfel', },
     {singular: 'Kuchen', gender: 'm', plural: 'Kuchen', },
     {singular: 'Fenster', gender: 'n', plural: 'Fenster', },
+    // meine Stadt, Städte
 ];
 
 module.exports = {nouns};

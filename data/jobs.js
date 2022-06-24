@@ -6,7 +6,12 @@ const jobs = [
     'Sportler',
     'Grafiker',
     'Architekt',
-    'Designer'
+    'Designer',
+    'Programmierer',
+    'Student',
+    'Journalist',
+    'Demokrat',
+    'Elektriker'
 ];
 
-module.exports = {adjectives: jobs};
+module.exports = {jobs};
